@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Spinner.scss";
-import Loading from "../assets/loadingAnim.gif";
+import Loading from "../assets/orb.gif";
 
 function Spinner() {
   return (

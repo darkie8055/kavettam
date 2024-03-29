@@ -32,7 +32,7 @@ function Board() {
   const getBoardData = () => {
     setIsLoading(true);
     fetch(
-      "https://script.google.com/macros/s/AKfycbyGujyOWsqlnFyJGPzIvICGVBLW1yqp99YDkTsb_7a2575PG--75PYZdAD00T0ziwyM/exec?type=points"
+      "https://script.google.com/macros/s/AKfycbzoY2wgIh1avoQA_dI6rgTyVBw1aqXN3GLgX_BJKle-U1lohOLq3LL9qo7k1682iNEF/exec?type=leaderboard"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -88,10 +88,10 @@ function Board() {
             {boardData.map((row, index) => (
               <tr key={index}>
                 <td className="teamName">
-                  {row.YearName}
-                  <span>{`${ordinal_suffix_of(row.Year)} year`}</span>
+                  {row.Team}
+                  {/* <span>{`${ordinal_suffix_of(row.Year)} year`}</span> */}
                 </td>
-                <td className="points">{row.Point}</td>
+                <td className="points">{row.Points}</td>
               </tr>
             ))}
           </tbody>

@@ -6,10 +6,10 @@
   height: 100vh;
   .loader {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     filter: grayscale(1) brightness(3);
-    mix-blend-mode: screen;
+    mix-blend-mode: exclusion;
   }
 }
